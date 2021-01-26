@@ -1,0 +1,23 @@
+<p>Interest Rates</p>
+ 
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Hypotheek</th>
+        <th>NHG</th>
+        <th>60% LTV</th>
+        <th>80% LTV</th>
+        <th>100% LTV</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rate of interestRatesList">
+        <td>{{ rate.Hypotheek }}</td>
+        <td>{{ rate.NHG }}</td>
+        <td>{{ rate['60%'] }}</td>
+        <td>{{ rate['80%'] }}</td>
+        <td>{{ rate['100%'] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
